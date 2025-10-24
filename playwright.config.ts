@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -12,8 +13,10 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-   testDir: './tests',
+  // testDir: './tests',
   // testDir: './tests/UI_Test',
+  //testDir: './tests/ZeroBank_Test_PageObejct',
+   testDir: './tests/API_Test/Notes_API',
   //  testDir: './tests/UI_Special_Control',
 
   /* Run tests in files in parallel */
